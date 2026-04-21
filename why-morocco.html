@@ -183,6 +183,30 @@
     .lifestyle-highlight { grid-template-columns: 1fr; gap: 1.5rem; }
   }
 
+  .photo-collage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8px;
+  }
+
+  .photo-collage-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .photo-collage-item.large img {
+    height: 400px;
+  }
+
+  .photo-collage-item.wide {
+    grid-column: 1 / 3;
+  }
+
+  .photo-collage-item.wide img {
+    height: 300px;
+  }
 </style>
 </head>
 <body>
@@ -344,38 +368,42 @@
     Kénitra's investment case is not just industrial. Five minutes from the city, Mehdiya beach stretches for kilometres along the Atlantic — one of Morocco's most popular and unspoiled coastlines. A Phoenician kasbah overlooks the port. A national park borders the shore. This is a city where industrial growth and natural beauty coexist — and that combination is extraordinarily rare.
   </p>
 
-  <!-- Photo grid -->
-<div class="photo-feature">
-  <div class="photo-feature-side">
-    <img class="photo-feature-img" src="plagemehdia.webp" alt="Plage Mehdiya — Atlantic Coastline">
+ <!-- Photo grid -->
+<div class="photo-collage">
+
+  <div class="photo-collage-item large">
+    <img src="plagemehdia.webp" alt="Plage Mehdiya — Atlantic Coastline">
     <div class="photo-caption">
       <div class="photo-caption-title">Plage Mehdia — Atlantic Coastline</div>
       <div class="photo-caption-sub">5 minutes from the city centre</div>
     </div>
   </div>
-</div>
-   <div class="photo-feature-side">
-  <img class="photo-feature-img" src="mehdia.png" alt="The Harbour at Mehdiya">
-  <div class="photo-caption">
-    <div class="photo-caption-title">The Harbour at Mehdia</div>
-    <div class="photo-caption-sub">Sidi Boughaba National Park adjacent</div>
+
+  <div class="photo-collage-item">
+    <img src="mehdia.png" alt="The Harbour at Mehdiya">
+    <div class="photo-caption">
+      <div class="photo-caption-title">The Harbour at Mehdia</div>
+      <div class="photo-caption-sub">Sidi Boughaba National Park adjacent</div>
+    </div>
   </div>
-</div>
-   <div class="photo-feature-side">
-  <img class="photo-feature-img" src="kasbah.png" alt="Kasbah of Mehdiya">
-  <div class="photo-caption">
-    <div class="photo-caption-title">Kasbah of Mehdiya</div>
-    <div class="photo-caption-sub">Phoenician fortress — 4th century BC</div>
+
+  <div class="photo-collage-item">
+    <img src="kasbah.png" alt="Kasbah of Mehdiya">
+    <div class="photo-caption">
+      <div class="photo-caption-title">Kasbah of Mehdiya</div>
+      <div class="photo-caption-sub">Phoenician fortress — 4th century BC</div>
+    </div>
   </div>
-</div>
-<div class="photo-feature-side">
-  <img class="photo-feature-img" src="sidiboughaba.png" alt="Lac Sidi Boughaba">
-  <div class="photo-caption">
-    <div class="photo-caption-title">Lac Sidi Boughaba National Park</div>
-    <div class="photo-caption-sub">Untouched nature — protected wetland on your doorstep</div>
+
+  <div class="photo-collage-item wide">
+    <img src="sidiboughaba.png" alt="Lac Sidi Boughaba">
+    <div class="photo-caption">
+      <div class="photo-caption-title">Lac Sidi Boughaba National Park</div>
+      <div class="photo-caption-sub">Untouched nature — protected wetland on your doorstep</div>
+    </div>
   </div>
+
 </div>
-  </div>
 
   <!-- Connectivity strip -->
   <p class="section-eyebrow" style="color:var(--gold);margin-bottom:2rem">Strategic Position</p>
