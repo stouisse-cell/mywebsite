@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Why Kénitra — Rahim International</title>
+<title>Why Invest in Kénitra, Morocco | Atlantic Coast Property Investment | Rahim International</title>
+<meta name="description" content="Kénitra is Morocco's most compelling emerging property market — undervalued coastal city near Rabat with Atlantic beaches, TGV rail, €1.2B industrial investment, and rental yields of 6–9%. Discover the Kénitra real estate opportunity with Rahim International.">
+<meta name="keywords" content="Morocco real estate investment, Kenitra property investment, coastal investment Morocco, buy property Morocco, Kenitra apartments, Morocco emerging market, Atlantic coast Morocco, Rabat property market, Morocco rental yields">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -19,7 +21,7 @@
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'Montserrat', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; }
 
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -44,38 +46,30 @@
   .nav-cta { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 0.55rem 1.4rem; text-decoration: none; transition: all 0.3s; }
   .nav-cta:hover { background: var(--gold); color: var(--navy); }
 
-  /* HERO */
-  .page-hero { min-height: 60vh; background: var(--navy); position: relative; display: flex; align-items: flex-end; padding: 0 5% 5rem; overflow: hidden; }
+  .page-hero {
+    min-height: 70vh; background: var(--navy); position: relative;
+    display: flex; align-items: flex-end; padding: 0 5% 6rem; overflow: hidden;
+  }
   .page-hero-bg { position: absolute; inset: 0; background: #0b1c36; }
   .page-hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  opacity: 0.6; 
-  filter: brightness(1.5);
-}
-  mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0) 75%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0) 75%);
-}
-  .page-hero-fade { position: absolute; inset: 0; background: linear-gradient(to right, #0b1c36 0%, #0b1c36 25%, rgba(11,28,54,0.5) 55%, rgba(11,28,54,0.05) 100%); }
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; object-position: center 30%; opacity: 0.45; filter: brightness(1.2);
+  }
+  .page-hero-fade { position: absolute; inset: 0; background: linear-gradient(to right, #0b1c36 0%, #0b1c36 20%, rgba(11,28,54,0.6) 55%, rgba(11,28,54,0.1) 100%); }
   .page-hero-pattern { position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(201,168,76,0.03) 80px), repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(201,168,76,0.03) 80px); }
-  .page-hero-content { position: relative; z-index: 2; margin-top: 70px; }
-  .page-hero-eyebrow { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem; }
+  .page-hero-content { position: relative; z-index: 2; margin-top: 70px; max-width: 700px; }
+  .page-hero-eyebrow { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.4rem; display: flex; align-items: center; gap: 1rem; }
   .page-hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
-  .page-hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1.05; color: var(--white); }
+  .page-hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.2rem, 7.5vw, 6rem); font-weight: 300; line-height: 1.0; color: var(--white); }
   .page-hero-title em { font-style: italic; color: var(--gold-light); }
-  .page-hero-sub { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 560px; margin-top: 1.4rem; }
+  .page-hero-sub { font-size: 0.92rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.65); max-width: 520px; margin-top: 1.6rem; }
+  .page-hero-divider { width: 50px; height: 1px; background: var(--gold); margin: 1.8rem 0; }
 
-  /* SHARED */
   .section-eyebrow { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
   .section-eyebrow::before { content: ''; display: block; width: 30px; height: 1px; background: var(--gold); }
-  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.2; color: var(--navy); margin-bottom: 1.5rem; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.15; color: var(--navy); margin-bottom: 1.5rem; }
   .body-text { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: var(--text-muted); margin-bottom: 1.2rem; }
 
-  /* MOROCCO INTRO */
   #morocco-intro { background: var(--white); padding: 7rem 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
   .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; }
   .stat-box { background: var(--cream); border: 1px solid var(--border); padding: 1.5rem; position: relative; }
@@ -83,7 +77,6 @@
   .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--navy); line-height: 1; margin-bottom: 0.3rem; }
   .stat-label { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
 
-  /* WHY MOROCCO CARDS */
   #why-morocco { background: var(--navy); padding: 7rem 5%; }
   #why-morocco .section-title { color: var(--white); }
   .reason-intro { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 650px; margin-bottom: 4rem; }
@@ -94,12 +87,15 @@
   .reason-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; color: var(--gold-light); margin-bottom: 0.8rem; line-height: 1.3; }
   .reason-desc { font-size: 0.82rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.55); }
 
-  /* DIVIDER QUOTE */
-  .pull-quote-section { background: var(--cream); padding: 5rem 5%; text-align: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-  .pull-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 300; font-style: italic; color: var(--navy); max-width: 800px; margin: 0 auto 1rem; line-height: 1.5; }
-  .pull-quote-source { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+  .image-break { height: 420px; position: relative; overflow: hidden; }
+  .image-break-bg { position: absolute; inset: 0; background-image: url('kenitra1.png'); background-size: cover; background-position: center; }
+  .image-break-overlay { position: absolute; inset: 0; background: rgba(13,30,58,0.5); }
+  .image-break-content { position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 5%; }
+  .image-break-eyebrow { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .image-break-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 1rem; }
+  .image-break-title em { font-style: italic; color: var(--gold); }
+  .image-break-sub { font-size: 0.88rem; font-weight: 300; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto; line-height: 1.9; }
 
-  /* KENITRA SECTION */
   #why-kenitra { background: var(--white); padding: 7rem 5%; }
   .kenitra-intro { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: var(--text-muted); max-width: 700px; margin-bottom: 4rem; }
   .kenitra-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
@@ -112,17 +108,47 @@
   .kenitra-card-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--gold); line-height: 1; }
   .kenitra-card-stat-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-top: 0.2rem; }
 
-  /* BEFORE DISCOVERED */
-  #undiscovered { background: var(--navy); padding: 7rem 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-  #undiscovered .section-title { color: var(--white); }
-  .undiscovered-text { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem; }
-  .compare-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+  #opportunity { background: var(--navy); padding: 7rem 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  #opportunity .section-title { color: var(--white); }
+  .opportunity-text { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem; }
+  .pull-quote-inline { border-left: 2px solid var(--gold); padding: 1.5rem 2rem; margin: 2rem 0; background: rgba(212,180,131,0.04); }
+  .pull-quote-inline p { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 300; font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.6; }
+  .pull-quote-inline cite { display: block; margin-top: 0.8rem; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-style: normal; }
+  .compare-table { width: 100%; border-collapse: collapse; }
   .compare-table th { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); padding: 0.8rem 1rem; background: rgba(255,255,255,0.04); text-align: left; border-bottom: 1px solid rgba(212,180,131,0.15); }
   .compare-table td { padding: 0.8rem 1rem; font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.65); border-bottom: 1px solid rgba(255,255,255,0.05); }
   .compare-table tr:last-child td { border-bottom: none; }
   .compare-table td.highlight { color: var(--gold); font-weight: 400; }
+  .compare-caption { font-size: 0.72rem; font-weight: 300; color: rgba(255,255,255,0.4); margin-top: 1rem; line-height: 1.7; }
 
-  /* CTA */
+  #mehdiya-lifestyle { background: var(--navy); padding: 7rem 5%; }
+  #mehdiya-lifestyle .section-title { color: var(--white); }
+  .mehdiya-intro { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 700px; margin-bottom: 4rem; }
+
+  .photo-collage { display: grid; grid-template-columns: 2fr 1fr; gap: 6px; margin-bottom: 5rem; }
+  .photo-collage-item { position: relative; overflow: hidden; }
+  .photo-collage-item img { width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.6s ease; }
+  .photo-collage-item:hover img { transform: scale(1.04); }
+  .photo-collage-item.large img { height: 526px; }
+  .photo-collage-item.wide { grid-column: 1 / 3; }
+  .photo-collage-item.wide img { height: 320px; }
+  .photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.8rem; background: linear-gradient(to top, rgba(11,28,54,0.88) 0%, transparent 100%); }
+  .photo-caption-title { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--white); line-height: 1.3; }
+  .photo-caption-sub { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 0.3rem; }
+
+  .connectivity-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(212,180,131,0.15); margin-top: 4rem; }
+  .conn-item { background: rgba(255,255,255,0.03); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s; }
+  .conn-item:hover { background: rgba(255,255,255,0.07); }
+  .conn-num { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--gold); line-height: 1; }
+  .conn-unit { font-size: 0.7rem; font-weight: 400; color: var(--gold); letter-spacing: 0.05em; }
+  .conn-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 0.6rem; line-height: 1.5; }
+  .conn-dest { font-size: 0.78rem; font-weight: 300; color: rgba(255,255,255,0.75); margin-top: 0.3rem; }
+
+  .lifestyle-highlight { background: rgba(212,180,131,0.06); border: 1px solid rgba(212,180,131,0.2); padding: 2.5rem 3rem; margin-top: 4rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; }
+  .lifestyle-highlight-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: var(--gold); line-height: 1; }
+  .lifestyle-highlight-body p { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.65); margin: 0; }
+  .lifestyle-highlight-body strong { color: var(--white); font-weight: 500; }
+
   #cta { background: var(--cream); padding: 6rem 5%; text-align: center; border-top: 1px solid var(--border); }
   #cta .section-title { margin-bottom: 1rem; }
   .cta-sub { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: var(--text-muted); max-width: 500px; margin: 0 auto 2.5rem; }
@@ -138,74 +164,18 @@
   .footer-copy { font-size: 0.7rem; font-weight: 300; color: rgba(255,255,255,0.3); letter-spacing: 0.05em; }
 
   @media (max-width: 900px) {
-    #morocco-intro, .kenitra-grid, #undiscovered { grid-template-columns: 1fr; gap: 3rem; }
+    #morocco-intro, .kenitra-grid, #opportunity { grid-template-columns: 1fr; gap: 3rem; }
     .reasons-grid { grid-template-columns: 1fr; }
     .stat-row { grid-template-columns: 1fr 1fr; }
     .nav-links { display: none; }
   }
-
-  /* ── MEHDIYA PHOTO SECTION ────────────────────────────────── */
-  #mehdiya-lifestyle { background: var(--navy); padding: 7rem 5%; }
-  #mehdiya-lifestyle .section-title { color: var(--white); }
-  .mehdiya-intro { font-size: 0.9rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.6); max-width: 700px; margin-bottom: 4rem; }
-
-  .photo-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px; background: rgba(212,180,131,0.15); margin-bottom: 4rem; }
-  .photo-feature-main { grid-row: span 2; position: relative; overflow: hidden; min-height: 480px; }
-  .photo-feature-side { position: relative; overflow: hidden; min-height: 235px; }
-  .photo-feature-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-  .photo-feature-main:hover .photo-feature-img,
-  .photo-feature-side:hover .photo-feature-img { transform: scale(1.04); }
-  .photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.8rem; background: linear-gradient(to top, rgba(11,28,54,0.85) 0%, transparent 100%); }
-  .photo-caption-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--white); line-height: 1.3; }
-  .photo-caption-sub { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 0.3rem; }
-
-  /* ── CONNECTIVITY STRIP ───────────────────────────────────── */
-  .connectivity-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(212,180,131,0.15); margin-top: 4rem; }
-  .conn-item { background: rgba(255,255,255,0.03); padding: 2rem 1.5rem; text-align: center; transition: background 0.3s; }
-  .conn-item:hover { background: rgba(255,255,255,0.07); }
-  .conn-num { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--gold); line-height: 1; }
-  .conn-unit { font-size: 0.7rem; font-weight: 400; color: var(--gold); letter-spacing: 0.05em; }
-  .conn-label { font-size: 0.65rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 0.6rem; line-height: 1.5; }
-  .conn-dest { font-size: 0.78rem; font-weight: 300; color: rgba(255,255,255,0.75); margin-top: 0.3rem; }
-
-  /* ── LIFESTYLE HIGHLIGHT BOX ──────────────────────────────── */
-  .lifestyle-highlight { background: rgba(212,180,131,0.06); border: 1px solid rgba(212,180,131,0.2); padding: 2.5rem 3rem; margin-top: 4rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; }
-  .lifestyle-highlight-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: var(--gold); line-height: 1; }
-  .lifestyle-highlight-body p { font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: rgba(255,255,255,0.65); margin: 0; }
-  .lifestyle-highlight-body strong { color: var(--white); font-weight: 500; }
-
   @media (max-width: 768px) {
-    .photo-feature { grid-template-columns: 1fr; }
-    .photo-feature-main { min-height: 300px; grid-row: span 1; }
-    .photo-feature-side { min-height: 220px; }
+    .photo-collage { grid-template-columns: 1fr; }
+    .photo-collage-item.large img { height: 300px; }
+    .photo-collage-item.wide { grid-column: span 1; }
     .connectivity-strip { grid-template-columns: repeat(2, 1fr); }
     .connectivity-strip .conn-item:last-child { grid-column: span 2; }
     .lifestyle-highlight { grid-template-columns: 1fr; gap: 1.5rem; }
-  }
-
-  .photo-collage {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 8px;
-  }
-
-  .photo-collage-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-  }
-
-  .photo-collage-item.large img {
-    height: 400px;
-  }
-
-  .photo-collage-item.wide {
-    grid-column: 1 / 3;
-  }
-
-  .photo-collage-item.wide img {
-    height: 300px;
   }
 </style>
 </head>
@@ -246,42 +216,42 @@
 <!-- HERO -->
 <div class="page-hero">
   <div class="page-hero-bg"></div>
-  <div class="page-hero-photo"></div>
   <video class="page-hero-video" autoplay muted loop playsinline>
-  <source src="kenitratgv.mp4" type="video/mp4">
-</video>
+    <source src="kenitratgv.mp4" type="video/mp4">
+  </video>
   <div class="page-hero-fade"></div>
   <div class="page-hero-pattern"></div>
   <div class="page-hero-content">
-    <p class="page-hero-eyebrow">The Investment Case</p>
+    <p class="page-hero-eyebrow">Morocco Real Estate Investment</p>
     <h1 class="page-hero-title">
-      Why Kénitra.<br>
-      <em>Why Kénitra.</em>
+      The City<br>
+      <em>Others Missed.</em>
     </h1>
-    <p class="page-hero-sub">A compelling market, a city on the rise, and a window that remains — for now — wide open.</p>
+    <div class="page-hero-divider"></div>
+    <p class="page-hero-sub">Kénitra is Morocco's most compelling emerging property market — an Atlantic coastal city with the infrastructure of a capital, the pricing of an early opportunity, and a window that is closing faster than the market has priced in.</p>
   </div>
 </div>
 
 <!-- MOROCCO INTRO -->
 <section id="morocco-intro">
   <div>
-    <p class="section-eyebrow">The Market</p>
-    <h2 class="section-title">Kénitra: The City Other Investors Haven't Found Yet.</h2>
+    <p class="section-eyebrow">The Investment Case</p>
+    <h2 class="section-title">Morocco Is the Market.<br>Kénitra Is the Opportunity.</h2>
     <p class="body-text">
-      It is an established, fast-growing real estate market at the intersection of Europe, Africa, and the Gulf — with transparent ownership laws, full freehold rights for foreigners, and a government actively courting international capital.
+      Morocco is one of the world's most accessible and legally secure destinations for international real estate investment. Foreign nationals acquire property outright under their own name, capital repatriation is guaranteed by law, and the government actively courts international buyers with one of Africa's most transparent ownership frameworks.
     </p>
     <p class="body-text">
-      Other Moroccan cities have already been discovered. Casablanca is expensive. Marrakech is crowded with competition. Tangier is attracting global attention and global capital. Kénitra is different — it is a city in transformation, with the fundamentals already in place, and the pricing still reflecting what it was rather than what it is becoming.
+      Morocco's headline cities have already been discovered. Casablanca commands premium prices. Marrakech is saturated with international competition. Tangier is attracting institutional capital at scale. Kénitra is different — a rapidly transforming coastal city where the fundamentals are firmly in place and the pricing still reflects what it was, not what it is becoming.
     </p>
     <p class="body-text">
-      We focus exclusively on Kénitra. Not because Morocco isn't compelling — it is — but because Kénitra is where the opportunity is greatest and the competition is least. A €1.2 billion Stellantis plant. TGV connectivity. A World Cup halo. Rental yields still available at 6–9%. This is the window.
+      Rahim International focuses exclusively on Kénitra because this is where the gap between current value and future trajectory is greatest. A €1.2 billion Stellantis manufacturing investment. High-speed TGV rail connectivity to Rabat. Atlantic coastline five minutes from the city. Rental yields of 6–9% on qualifying assets. The case is made. The window remains open.
     </p>
   </div>
   <div>
     <div class="stat-row">
       <div class="stat-box">
         <div class="stat-num">+52%</div>
-        <div class="stat-label">FDI growth in real estate, 2024</div>
+        <div class="stat-label">FDI growth in Moroccan real estate, 2024</div>
       </div>
       <div class="stat-box">
         <div class="stat-num">4.99%</div>
@@ -289,7 +259,7 @@
       </div>
       <div class="stat-box">
         <div class="stat-num">19.8M</div>
-        <div class="stat-label">Tourist arrivals in 2025 — record high</div>
+        <div class="stat-label">Tourist arrivals 2025 — record high</div>
       </div>
       <div class="stat-box">
         <div class="stat-num">$41B</div>
@@ -301,114 +271,220 @@
 
 <!-- WHY MOROCCO REASONS -->
 <section id="why-morocco">
-  <p class="section-eyebrow" style="color:var(--gold)">Six Reasons</p>
-  <h2 class="section-title">Why Kénitra Works<br>for International Investors</h2>
-  <p class="reason-intro">Kénitra is not just a Moroccan city story. It is a city at the intersection of every major growth driver in the country — industrial, infrastructural, and demographic — at a price point that still makes sense.</p>
+  <p class="section-eyebrow" style="color:var(--gold)">The Foundation</p>
+  <h2 class="section-title">Why Morocco Stands Apart<br>for International Capital</h2>
+  <p class="reason-intro">Before the city, the country. Morocco provides the legal protections, economic stability, and investor guarantees that make Kénitra's opportunity not just compelling — but accessible, transparent, and safeguarded for international buyers.</p>
   <div class="reasons-grid">
     <div class="reason-card">
       <div class="reason-icon">⚖️</div>
-      <div class="reason-title">Full Foreign Ownership</div>
-      <p class="reason-desc">Foreign nationals can own residential property outright — freehold, under their own name, with no partner or special structure required. Title is notarised and registered with the national Land Registry (ANCFCC).</p>
+      <div class="reason-title">Unconditional Foreign Ownership</div>
+      <p class="reason-desc">Foreign nationals acquire residential property outright in their own name — no local partner, no special structure, no restrictions. Freehold title is notarised and registered with Morocco's national Land Registry (ANCFCC), providing the same legal protections available to Moroccan citizens.</p>
     </div>
     <div class="reason-card">
       <div class="reason-icon">💱</div>
-      <div class="reason-title">Free Repatriation of Capital</div>
-      <p class="reason-desc">Purchase financed in foreign currency through a convertible dirham account? Morocco's Office des Changes guarantees your right to transfer rental income and sale proceeds back abroad — in full. This protection applies to all Kénitra investments made through a convertible dirham account.</p>
+      <div class="reason-title">Guaranteed Capital Repatriation</div>
+      <p class="reason-desc">For purchases financed through a convertible dirham account, Morocco's Office des Changes guarantees the full transfer of both rental income and sale proceeds to your home country. This is a statutory protection — not a policy subject to discretionary approval — and it applies to every qualifying Kénitra investment.</p>
     </div>
     <div class="reason-card">
       <div class="reason-icon">📈</div>
-      <div class="reason-title">Strong & Stable Growth</div>
-      <p class="reason-desc">GDP growth of 3.2% in 2024, projected at 3.9% in 2025 and 3.7% in 2026 (IMF). Inflation at 0.9% in 2024. One of Africa's highest sovereign credit ratings. A macro environment that protects the value of property assets.</p>
+      <div class="reason-title">Sovereign Stability, Consistent Growth</div>
+      <p class="reason-desc">GDP growth of 3.2% in 2024, projected at 3.9% in 2025 (IMF). Inflation held at 0.9%. One of Africa's highest sovereign credit ratings. Morocco's macroeconomic environment is purpose-built for long-term capital preservation — a stable monetary framework that underpins consistent asset appreciation.</p>
     </div>
     <div class="reason-card">
       <div class="reason-icon">✈️</div>
-      <div class="reason-title">World Cup 2030 Infrastructure</div>
-      <p class="reason-desc">Morocco co-hosts the FIFA World Cup with Spain and Portugal in 2030. Rabat — the host city 30 minutes from Kénitra by TGV — is receiving billions in upgrades. Kénitra is on the corridor, and property values are already responding.</p>
+      <div class="reason-title">World Cup 2030 — A Nation Transformed</div>
+      <p class="reason-desc">Morocco co-hosts the 2030 FIFA World Cup alongside Spain and Portugal, triggering one of the largest infrastructure investment programmes in the country's history. Rabat — primary host city and 20 minutes from Kénitra by TGV — is at the centre of this transformation. The uplift on surrounding property markets is already beginning.</p>
     </div>
     <div class="reason-card">
       <div class="reason-icon">🌍</div>
-      <div class="reason-title">Gateway Location</div>
-      <p class="reason-desc">Two hours from Madrid. Four hours from Paris. Kénitra sits on Morocco's Atlantic corridor, with its own TGV station and direct motorway connections. As Morocco becomes the logistics hub for three continents, Kénitra is at the centre of that story.</p>
+      <div class="reason-title">Africa's Atlantic Gateway</div>
+      <p class="reason-desc">Two hours from Madrid. Four from Paris. Morocco sits at the convergence of Europe, Sub-Saharan Africa, and the Gulf — and is emerging as the continent's leading logistics and manufacturing hub. Kénitra sits at the heart of that corridor, with deep-water port access, motorway connectivity, and Africa's first high-speed rail network.</p>
     </div>
     <div class="reason-card">
       <div class="reason-icon">💰</div>
-      <div class="reason-title">Competitive Entry Prices</div>
-      <p class="reason-desc">The national average price per square metre is around 10,500 MAD — roughly €980/m². Premium apartments in cities like Kénitra and Rabat represent a fraction of the cost of comparable Mediterranean markets in Spain, Portugal, or France.</p>
+      <div class="reason-title">Entry Pricing That Still Reflects Yesterday</div>
+      <p class="reason-desc">Premium residential property in Kénitra trades at approximately €980–1,100/m² — materially below Casablanca and Marrakech, and a fraction of comparable coastal assets in Lisbon, Madrid, or the French Riviera. The drivers of appreciation are already in motion. Pre-discovery pricing will not persist.</p>
     </div>
   </div>
 </section>
 
-<!-- PULL QUOTE -->
-<div class="pull-quote-section">
-  <p class="pull-quote">"Other cities compete on name recognition. Kénitra competes on fundamentals. We are here because the numbers are better, the competition is less, and the window is still open."</p>
-  <div class="pull-quote-source">Ali Rahim — Founder & CEO, Rahim International</div>
-</div>
-
-
 <!-- IMAGE BREAK -->
-<div style="height:400px;position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background-image:url(kenitra1.png);background-size:cover;background-position:center;"></div>
-  <div style="position:absolute;inset:0;background:rgba(13,30,58,0.55);"></div>
-  <div style="position:relative;z-index:2;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 5%;">
+<div class="image-break">
+  <div class="image-break-bg"></div>
+  <div class="image-break-overlay"></div>
+  <div class="image-break-content">
     <div>
-      <p style="font-size:0.7rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:#d4b483;margin-bottom:1.2rem;">The City</p>
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:300;color:#ffffff;line-height:1.1;margin-bottom:1rem;">Kénitra.<br><em style="font-style:italic;color:#d4b483;">Little Bridge. Big Future.</em></h2>
-      <p style="font-size:0.88rem;font-weight:300;color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto;line-height:1.9;">The city whose name means "little bridge" — and our exclusive focus, because we believe it is Morocco's single best real estate opportunity right now.</p>
+      <p class="image-break-eyebrow">Kénitra, Atlantic Morocco</p>
+      <h2 class="image-break-title">Industrial Strength.<br><em>Coastal Soul.</em></h2>
+      <p class="image-break-sub">A city at the convergence of Morocco's Atlantic motorway and high-speed rail corridors — with kilometres of unspoiled coastline, a deep-water port, and one of the country's fastest-growing industrial zones.</p>
     </div>
   </div>
 </div>
 
 <!-- WHY KÉNITRA -->
+<section id="why-kenitra">
+  <p class="section-eyebrow">Kénitra Property Investment</p>
+  <h2 class="section-title">Six Reasons This City<br>Outperforms the Market</h2>
+  <p class="kenitra-intro">
+    Kénitra's transformation is not a story waiting to be written — it is already underway. The industrial investment is confirmed. The infrastructure is operational. The population is growing. What the international property market has not yet priced in is precisely what defines the opportunity.
+  </p>
+  <div class="kenitra-grid">
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">01</div>
+      <div class="kenitra-card-title">A €1.2 Billion Industrial Anchor</div>
+      <p class="kenitra-card-text">In July 2025, Stellantis inaugurated a €1.2 billion expansion of its Kénitra manufacturing facility — the largest single automotive investment in Morocco's history. Targeting 535,000 vehicles per year and generating over 3,100 direct jobs, this expansion anchors a supply chain ecosystem drawing manufacturers, logistics operators, and technology companies from across Europe and Asia. Industrial investment at this scale is historically among the most reliable predictors of residential property appreciation in a secondary city.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">€1.2B</div>
+        <div class="kenitra-card-stat-label">Stellantis manufacturing expansion, inaugurated 2025</div>
+      </div>
+    </div>
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">02</div>
+      <div class="kenitra-card-title">High-Speed Rail — Capital Proximity</div>
+      <p class="kenitra-card-text">Kénitra is integrated into Morocco's Al Boraq high-speed network — placing Rabat just 20 minutes away and Casablanca within 90 minutes. The city's purpose-built TGV station is a signal of the government's long-term commitment to this corridor. High-speed rail connectivity linking a secondary city directly to a national capital is a consistent, well-documented driver of residential and commercial property value appreciation across global markets.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">20 min</div>
+        <div class="kenitra-card-stat-label">To Rabat by high-speed rail</div>
+      </div>
+    </div>
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">03</div>
+      <div class="kenitra-card-title">The Atlantic Free Zone — Structural Demand</div>
+      <p class="kenitra-card-text">Home to over 30 international manufacturers and more than 20,000 workers, the Atlantic Free Zone is Kénitra's industrial engine. As the Stellantis ecosystem deepens and the supply chain expands, this workforce will grow — creating sustained, structural demand for quality urban housing. This is not speculative demand tied to tourism cycles. It is permanent residential demand generated by permanent economic activity: the most dependable foundation for long-term rental income and capital growth.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">20,000+</div>
+        <div class="kenitra-card-stat-label">Workers in the Atlantic Free Zone, and growing</div>
+      </div>
+    </div>
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">04</div>
+      <div class="kenitra-card-title">Undervalued Against Every Benchmark</div>
+      <p class="kenitra-card-text">Premium apartments in Kénitra are currently priced at 10,000–12,000 MAD/m² — well below Rabat, materially below Casablanca, and a fraction of comparable coastal assets across Mediterranean Europe. The fundamentals driving appreciation — industrial investment, infrastructure, demographic growth, World Cup proximity — are already confirmed. The market price has not yet caught up with that reality. That structural gap between current value and future trajectory is the definition of a quality entry point in Morocco real estate investment.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">~11,500 MAD/m²</div>
+        <div class="kenitra-card-stat-label">Current premium residential pricing in Kénitra</div>
+      </div>
+    </div>
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">05</div>
+      <div class="kenitra-card-title">World Cup 2030 — On the Corridor</div>
+      <p class="kenitra-card-text">Kénitra is not a host city — but it sits 20 minutes by TGV from Rabat, which is. The $41 billion in infrastructure investment, the surge in international arrivals, and the sustained global media attention of a World Cup do not stop at city limits. The entire Rabat–Salé–Kénitra corridor is already responding. Historical data from prior tournaments confirms sustained property value uplift in cities positioned within the orbital zone of host cities.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">2030</div>
+        <div class="kenitra-card-stat-label">FIFA World Cup — Morocco, Spain &amp; Portugal</div>
+      </div>
+    </div>
+    <div class="kenitra-card">
+      <div class="kenitra-card-num">06</div>
+      <div class="kenitra-card-title">A Young, Rapidly Expanding Population</div>
+      <p class="kenitra-card-text">Kénitra's population is young, growing rapidly, and increasingly employed across the industrial and services sectors. The city is not expanding by government projection — it is expanding through the arrival of workers, families, and businesses responding to real economic activity. This demographic profile creates deep, sustained demand for quality rental stock and owner-occupied residential property: the bedrock of consistent long-term investment returns in Kénitra real estate.</p>
+      <div class="kenitra-card-stat">
+        <div class="kenitra-card-stat-num">450,000+</div>
+        <div class="kenitra-card-stat-label">City population — among Morocco's fastest-growing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPPORTUNITY + COMPARISON -->
+<section id="opportunity">
+  <div>
+    <p class="section-eyebrow" style="color:var(--gold)">Market Positioning</p>
+    <h2 class="section-title">Pre-Discovery Pricing.<br>Post-Confirmation<br>Fundamentals.</h2>
+    <p class="opportunity-text">The most consistently profitable property investments share a defining characteristic: they were made after the fundamental drivers of value were confirmed, but before the broader market had priced them in. Kénitra is at precisely that point.</p>
+    <p class="opportunity-text">The industrial investment is not projected — it is operational. The infrastructure is not planned — it is built. The population growth is not forecast — it is happening. What has not yet arrived is the international buyer. And the moment that changes, so does the price.</p>
+    <p class="opportunity-text">Investors who moved at the equivalent inflection point in Lisbon, Marrakech, and Medellín captured significant capital appreciation within five to seven years. Those who moved later paid for the story that the early movers wrote.</p>
+    <div class="pull-quote-inline">
+      <p>"Other cities compete on name recognition. Kénitra competes on fundamentals — and right now, the fundamentals are exceptional and the international competition is almost nonexistent."</p>
+      <cite>Ali Rahim — Founder &amp; CEO, Rahim International</cite>
+    </div>
+  </div>
+  <div>
+    <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;">Price Per m² — Kénitra vs Comparable Markets</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Market</th>
+          <th>Avg. Price / m²</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lisbon, Portugal</td>
+          <td>€4,500–6,000</td>
+          <td>Mature / fully priced</td>
+        </tr>
+        <tr>
+          <td>Madrid, Spain</td>
+          <td>€3,500–5,500</td>
+          <td>Mature / competitive</td>
+        </tr>
+        <tr>
+          <td>Marrakech, Morocco</td>
+          <td>~€1,200–1,800</td>
+          <td>Discovered / rising fast</td>
+        </tr>
+        <tr>
+          <td>Casablanca, Morocco</td>
+          <td>~€1,100–1,500</td>
+          <td>Established / stable</td>
+        </tr>
+        <tr>
+          <td class="highlight">Kénitra, Morocco</td>
+          <td class="highlight">~€980–1,100</td>
+          <td class="highlight">Emerging — early entry</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="compare-caption">Prices are approximate and market-dependent. Kénitra figures reflect premium residential stock in well-located neighbourhoods. Gross rental yields of 6–9% are currently achievable on qualifying Kénitra assets. Past performance does not guarantee future returns.</p>
+  </div>
+</section>
 
 <!-- MEHDIYA / LIFESTYLE SECTION -->
 <section id="mehdiya-lifestyle">
-  <p class="section-eyebrow" style="color:var(--gold)">Location &amp; Lifestyle</p>
-  <h2 class="section-title">More Than a City.<br><em>A Coastline. A Heritage. A Life.</em></h2>
+  <p class="section-eyebrow" style="color:var(--gold)">Coastal Living &amp; Natural Assets</p>
+  <h2 class="section-title">Atlantic Coastline.<br><em>National Parks. Ancient Heritage.</em></h2>
   <p class="mehdiya-intro">
-    Kénitra's investment case is not just industrial. Five minutes from the city, Mehdiya beach stretches for kilometres along the Atlantic — one of Morocco's most popular and unspoiled coastlines. A Phoenician kasbah overlooks the port. A national park borders the shore. This is a city where industrial growth and natural beauty coexist — and that combination is extraordinarily rare.
+    The investment case for Kénitra property is grounded in industrial and infrastructural fundamentals — but the lifestyle proposition is unambiguously Atlantic. Five minutes from the city centre, Mehdiya's beach extends for kilometres along one of Morocco's most unspoiled coastlines. A Phoenician kasbah stands watch over the working port. The Sidi Boughaba National Park — a Ramsar-designated wetland and internationally protected bird sanctuary — borders the shore. Kénitra offers what almost no emerging investment city can: extraordinary natural assets directly adjacent to a high-growth industrial and economic hub. That combination commands a rental premium. It will command a capital premium too.
   </p>
 
-<!-- Photo grid -->
-<div class="photo-collage">
-
-  <div class="photo-collage-item large">
-    <img src="plagemehdia.webp" alt="Plage Mehdiya — Atlantic Coastline">
-    <div class="photo-caption">
-      <div class="photo-caption-title">Plage Mehdia — Atlantic Coastline</div>
-      <div class="photo-caption-sub">5 minutes from the city centre</div>
+  <!-- Photo Collage -->
+  <div class="photo-collage">
+    <div class="photo-collage-item large">
+      <img src="plagemehdia.webp" alt="Plage Mehdiya — Atlantic coastline near Kénitra Morocco">
+      <div class="photo-caption">
+        <div class="photo-caption-title">Plage Mehdiya — Atlantic Coastline</div>
+        <div class="photo-caption-sub">5 minutes from Kénitra city centre</div>
+      </div>
+    </div>
+    <div class="photo-collage-item">
+      <img src="mehdia.png" alt="The Harbour at Mehdiya near Kénitra">
+      <div class="photo-caption">
+        <div class="photo-caption-title">The Harbour at Mehdiya</div>
+        <div class="photo-caption-sub">Working Atlantic port — Kénitra</div>
+      </div>
+    </div>
+    <div class="photo-collage-item">
+      <img src="kasbah.png" alt="Kasbah of Mehdiya — Phoenician fortress near Kénitra Morocco">
+      <div class="photo-caption">
+        <div class="photo-caption-title">Kasbah of Mehdiya</div>
+        <div class="photo-caption-sub">Phoenician fortress — 4th century BC</div>
+      </div>
+    </div>
+    <div class="photo-collage-item wide">
+      <img src="sidiboughaba.png" alt="Lac Sidi Boughaba National Park — Ramsar wetland near Kénitra Morocco">
+      <div class="photo-caption">
+        <div class="photo-caption-title">Lac Sidi Boughaba National Park</div>
+        <div class="photo-caption-sub">Ramsar-protected wetland — unspoiled nature on your doorstep</div>
+      </div>
     </div>
   </div>
 
-  <div class="photo-collage-item">
-    <img src="mehdia.png" alt="The Harbour at Mehdiya">
-    <div class="photo-caption">
-      <div class="photo-caption-title">The Harbour at Mehdia</div>
-      <div class="photo-caption-sub">Sidi Boughaba National Park adjacent</div>
-    </div>
-  </div>
-
-  <div class="photo-collage-item">
-    <img src="kasbah.png" alt="Kasbah of Mehdiya">
-    <div class="photo-caption">
-      <div class="photo-caption-title">Kasbah of Mehdiya</div>
-      <div class="photo-caption-sub">Phoenician fortress — 4th century BC</div>
-    </div>
-  </div>
-
-  <div class="photo-collage-item wide">
-    <img src="sidiboughaba.png" alt="Lac Sidi Boughaba">
-    <div class="photo-caption">
-      <div class="photo-caption-title">Lac Sidi Boughaba National Park</div>
-      <div class="photo-caption-sub">Untouched nature — protected wetland on your doorstep</div>
-    </div>
-  </div>
-
-</div>
-
-  <!-- Connectivity strip -->
-  <p class="section-eyebrow" style="color:var(--gold);margin-bottom:2rem">Strategic Position</p>
-  <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:0.8rem;">No city in Morocco is<br>better positioned.</h3>
-  <p style="font-size:0.88rem;font-weight:300;color:rgba(255,255,255,0.55);max-width:620px;line-height:1.9;margin-bottom:0;">Every major destination — the capital, the airport, the sea, the mountains — within reach in under an hour. When the LGV extension to Marrakech opens, Kénitra becomes a beach day-trip for four million tourists and residents. That is not a prediction. It is infrastructure already under construction.</p>
+  <!-- Connectivity -->
+  <p class="section-eyebrow" style="color:var(--gold);margin-bottom:2rem">Connectivity &amp; Strategic Position</p>
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:0.8rem;">Every major destination within reach.<br>No coastal city in Morocco is better connected.</h3>
+  <p style="font-size:0.88rem;font-weight:300;color:rgba(255,255,255,0.55);max-width:640px;line-height:1.9;margin-bottom:0;">Kénitra sits at the intersection of Morocco's Atlantic motorway and its high-speed rail network — placing the capital, the international airport, the coastline, and the country's key economic hubs within easy reach. When the LGV extension to Marrakech opens, Kénitra becomes the nearest Atlantic beach on the high-speed network to over four million annual tourists. That is not speculation. It is infrastructure already under active construction.</p>
 
   <div class="connectivity-strip">
     <div class="conn-item">
@@ -438,139 +514,25 @@
     </div>
   </div>
 
-  <!-- LGV highlight box -->
   <div class="lifestyle-highlight">
     <div>
       <div class="lifestyle-highlight-num">1h30</div>
-      <div style="font-size:0.65rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:0.4rem;">Kénitra → Marrakech</div>
+      <div style="font-size:0.65rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-top:0.4rem;">Kénitra → Marrakech by LGV</div>
     </div>
     <div class="lifestyle-highlight-body">
-      <p>When the <strong>LGV high-speed rail extension to Marrakech</strong> is complete, Kénitra will sit 1h30 from one of the world's most visited cities. Marrakech receives over 4 million tourists annually. Kénitra will become their <strong>Atlantic beach escape</strong> — the nearest stretch of coastline on the high-speed network. Beachfront and near-beach property in Kénitra, currently affordable, will not remain so. <strong>This is the window.</strong></p>
+      <p>When the <strong>LGV high-speed extension to Marrakech</strong> is complete, Kénitra will be just 1h30 from one of the world's most visited cities — which receives over 4 million tourists annually. For those visitors, and for Rabat's rapidly growing population of professionals and expatriates, Kénitra becomes the <strong>closest Atlantic beach destination on the entire high-speed network</strong>. Coastal and near-beach property in Kénitra, currently among the most affordable in Morocco, will not remain so. <strong>The window is open. It will not stay that way.</strong></p>
     </div>
-  </div>
-</section>
-
-<section id="why-kenitra">
-  <p class="section-eyebrow">The City</p>
-  <h2 class="section-title">Why Kénitra<br>Is Different</h2>
-  <p class="kenitra-intro">
-    Kénitra means "little bridge" in Arabic. It sits between Casablanca and Tangier — Morocco's two biggest economic engines — connected by TGV, motorway, and a growing industrial corridor that is drawing billions in global investment. This is a city that has not yet been priced for what it is becoming.
-  </p>
-  <div class="kenitra-grid">
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">01</div>
-      <div class="kenitra-card-title">Stellantis — A €1.2 Billion Vote of Confidence</div>
-      <p class="kenitra-card-text">In July 2025, Stellantis inaugurated a €1.2 billion expansion of its Kénitra manufacturing plant — one of the largest industrial investments in Morocco's history. The expanded facility targets 535,000 vehicles per year and creates over 3,100 direct jobs. When one of the world's largest automotive groups doubles down on a city, the real estate market follows.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">€1.2B</div>
-        <div class="kenitra-card-stat-label">Stellantis expansion investment, 2025</div>
-      </div>
-    </div>
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">02</div>
-      <div class="kenitra-card-title">TGV Connected — 30 Minutes from Rabat</div>
-      <p class="kenitra-card-text">Kénitra is served by Morocco's high-speed rail network, placing it 30 minutes from the capital Rabat and under two hours from Casablanca. The city's modern TGV station — an architectural landmark in its own right — signals the level of infrastructure investment the government has committed to this region.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">30 min</div>
-        <div class="kenitra-card-stat-label">To Rabat by TGV</div>
-      </div>
-    </div>
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">03</div>
-      <div class="kenitra-card-title">Atlantic Free Zone — Industrial Engine</div>
-      <p class="kenitra-card-text">The Atlantic Free Zone in Kénitra is home to over 30 factories and 20,000 workers, with Stellantis as its anchor tenant. The zone is attracting suppliers, logistics operators, and technology companies from across Europe and Asia — each bringing a workforce that needs housing, services, and quality urban infrastructure.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">20,000+</div>
-        <div class="kenitra-card-stat-label">Workers in the Atlantic Free Zone</div>
-      </div>
-    </div>
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">04</div>
-      <div class="kenitra-card-title">Affordable — Before the Market Catches Up</div>
-      <p class="kenitra-card-text">Premium apartments in Kénitra are priced at around 10,000–12,000 MAD/m² — significantly below Rabat and Casablanca, and at a fraction of comparable properties in southern Europe. The fundamentals driving price growth are already in place. The market has not yet caught up with the city's trajectory. That gap is the opportunity.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">~11,500 MAD/m²</div>
-        <div class="kenitra-card-stat-label">Premium apartment pricing in Kénitra</div>
-      </div>
-    </div>
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">05</div>
-      <div class="kenitra-card-title">World Cup 2030 — Regional Impact</div>
-      <p class="kenitra-card-text">While Kénitra is not itself a World Cup host city, its proximity to Rabat — which is a host city — and its position on Morocco's main TGV corridor means it will benefit directly from the infrastructure upgrades, increased tourism, and international attention that the tournament brings to the entire Rabat-Salé-Kénitra region.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">2030</div>
-        <div class="kenitra-card-stat-label">FIFA World Cup, Morocco co-host</div>
-      </div>
-    </div>
-    <div class="kenitra-card">
-      <div class="kenitra-card-num">06</div>
-      <div class="kenitra-card-title">Young, Growing Population</div>
-      <p class="kenitra-card-text">Kénitra's population is young, growing, and increasingly employed in the industrial and services sectors. The city's expanding workforce — drawn by the Atlantic Free Zone and related industries — creates sustained structural demand for quality housing. This is not speculative demand. It is demographic and economic reality.</p>
-      <div class="kenitra-card-stat">
-        <div class="kenitra-card-stat-num">450,000+</div>
-        <div class="kenitra-card-stat-label">City population and growing</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BEFORE IT'S DISCOVERED -->
-<section id="undiscovered">
-  <div>
-    <p class="section-eyebrow" style="color:var(--gold)">The Opportunity</p>
-    <h2 class="section-title">Before the<br>Market Catches Up</h2>
-    <p class="undiscovered-text">Every city that becomes a sought-after real estate market was, at some point, a city that international buyers had not yet discovered. Kénitra is at that inflection point right now.</p>
-    <p class="undiscovered-text">The industrial investment is in. The infrastructure is built. The workforce is arriving. The city is growing. What has not yet arrived is the international buyer — and that is precisely the window Rahim International was built to open.</p>
-    <p class="undiscovered-text">The investors who move early in markets like this are the ones who capture the appreciation. The ones who move later pay for the story that the early movers wrote.</p>
-  </div>
-  <div>
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th>City</th>
-          <th>Avg. Price/m²</th>
-          <th>Market Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lisbon</td>
-          <td>€4,500–6,000</td>
-          <td>Mature / expensive</td>
-        </tr>
-        <tr>
-          <td>Madrid</td>
-          <td>€3,500–5,500</td>
-          <td>Mature / competitive</td>
-        </tr>
-        <tr>
-          <td>Marrakech</td>
-          <td>~€1,200–1,800</td>
-          <td>Discovered / rising</td>
-        </tr>
-        <tr>
-          <td>Casablanca</td>
-          <td>~€1,100–1,500</td>
-          <td>Established / stable</td>
-        </tr>
-        <tr>
-          <td class="highlight">Kénitra</td>
-          <td class="highlight">~€980–1,100</td>
-          <td class="highlight">Early — move now</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </section>
 
 <!-- CTA -->
 <section id="cta">
-  <p class="section-eyebrow" style="justify-content:center">Take the Next Step</p>
-  <h2 class="section-title">Ready to Invest<br>in Kénitra?</h2>
-  <p class="cta-sub">Speak with our team. We will guide you through the market, the legal process, and the specific opportunities available right now.</p>
+  <p class="section-eyebrow" style="justify-content:center">Begin Your Investment Journey</p>
+  <h2 class="section-title">The Fundamentals Are Confirmed.<br>The Pricing Still Reflects the Past.</h2>
+  <p class="cta-sub">Speak with our team about specific Kénitra property opportunities — current listings, projected yields, the acquisition process, and what the market looks like on the ground today. No obligation. Complete transparency.</p>
   <div class="cta-actions">
-    <a href="index.html#contact" class="btn-gold">Begin a Conversation</a>
-    <a href="services-buyers.html" class="btn-outline-dark">How It Works for Buyers</a>
+    <a href="index.html#contact" class="btn-gold">Request a Private Consultation</a>
+    <a href="services-buyers.html" class="btn-outline-dark">How We Work With Buyers</a>
   </div>
 </section>
 
@@ -598,11 +560,16 @@
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
     });
   }, { threshold: 0.08 });
-  document.querySelectorAll('.reason-card, .kenitra-card, .stat-box').forEach(el => {
-    el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
+
+  document.querySelectorAll('.reason-card, .kenitra-card, .stat-box, .photo-collage-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
   });
