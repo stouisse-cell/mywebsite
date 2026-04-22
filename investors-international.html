@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Investors | Rahim International</title>
+<meta name="description" content="End-to-end guidance for international buyers investing in Moroccan property: legal framework, purchase process, bank support, notary coordination, and property management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1e3a;
+    --navy-mid: #162d52;
+    --gold: #d4b483;
+    --gold-deep: #a8844a;
+    --cream: #faf7f1;
+    --white: #ffffff;
+    --text-dark: #0d1e3a;
+    --text-muted: #5a6a7e;
+    --border: rgba(212, 180, 131, 0.25);
+    --shadow: 0 18px 48px rgba(11, 28, 54, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  svg { display: block; max-width: 100%; }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    min-height: 70px;
+    padding: 0.8rem 5%;
+    background: rgba(11, 28, 54, 0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+    min-width: max-content;
+  }
+  .brand-mark { width: 38px; height: 32px; flex: 0 0 auto; }
+  .brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+  .brand-name span { color: var(--white); }
+  .brand-mark-bg { fill: var(--navy); }
+  .brand-mark-gold { fill: var(--gold); }
+  .brand-mark-deep { fill: var(--gold-deep); }
+  .brand-mark-navy { fill: var(--navy); }
+  .brand-mark-line { stroke: var(--gold); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.8rem, 1.8vw, 2rem);
+    list-style: none;
+  }
+  .nav-links a,
+  .nav-dropdown-toggle,
+  .nav-cta {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s, background 0.3s, border-color 0.3s;
+  }
+  .nav-dropdown-toggle {
+    border: 0;
+    background: transparent;
+    cursor: default;
+  }
+  .nav-links a,
+  .nav-dropdown-toggle { color: rgba(255, 255, 255, 0.7); }
+  .nav-links a:hover,
+  .nav-links a:focus-visible,
+  .nav-dropdown-toggle:hover,
+  .nav-dropdown-toggle:focus-visible,
+  .nav-links a.active { color: var(--gold); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nav-dropdown-toggle::after {
+    content: '▾';
+    font-size: 0.6rem;
+    opacity: 0.75;
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    min-width: 230px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: rgba(11, 28, 54, 0.98);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    z-index: 300;
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid rgba(212, 180, 131, 0.12);
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-cta {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 0.55rem 1.2rem;
+  }
+  .nav-cta:hover,
+  .nav-cta:focus-visible {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .nav-toggle { display: none; }
+
+  .page-hero {
+    min-height: 62vh;
+    background: var(--navy);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 8rem 5% 5rem;
+    overflow: hidden;
+  }
+  .page-hero-bg,
+  .page-hero-fade,
+  .page-hero-pattern {
+    position: absolute;
+    inset: 0;
+  }
+  .page-hero-bg {
+    background:
+      linear-gradient(to right, #0b1c36 0%, rgba(11, 28, 54, 0.78) 54%, rgba(11, 28, 54, 0.16) 100%),
+      url("kenitra1.png") center / cover;
+    opacity: 0.72;
+  }
+  .page-hero-fade {
+    z-index: 1;
+    background: linear-gradient(to right, #0b1c36 0%, rgba(11, 28, 54, 0.86) 42%, rgba(11, 28, 54, 0.18) 100%);
+  }
+  .page-hero-pattern {
+    z-index: 2;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(212, 180, 131, 0.04) 80px),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(212, 180, 131, 0.04) 80px);
+  }
+  .page-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+  }
+  .page-hero-eyebrow,
+  .section-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .page-hero-eyebrow::before,
+  .section-eyebrow::before {
+    content: '';
+    width: 34px;
+    height: 1px;
+    background: var(--gold);
+    flex: 0 0 auto;
+  }
+  .page-hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--white);
+  }
+  .page-hero-title em { font-style: italic; color: var(--gold); }
+  .page-hero-sub {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 620px;
+    margin-top: 1.5rem;
+  }
+
+  section { padding: 7rem 5%; }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+  .intro-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--text-muted);
+    max-width: 740px;
+    margin-bottom: 3.5rem;
+  }
+
+  #legal,
+  #services-list,
+  #cta { background: var(--white); }
+  .legal-grid,
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--border);
+  }
+  .legal-card,
+  .service-card {
+    background: var(--cream);
+    padding: 2rem;
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+  }
+  .service-card { background: var(--white); padding: 2.5rem 2rem; }
+  .legal-card:hover,
+  .service-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .legal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gold);
+  }
+  .legal-card-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--gold);
+    color: var(--gold-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  .legal-card-title,
+  .service-title,
+  .step-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .legal-card-title {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 0.7rem;
+  }
+  .legal-card-text,
+  .service-desc,
+  .step-desc,
+  .check-text,
+  .highlight-sub {
+    font-size: 0.84rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  .legal-card-text,
+  .service-desc { color: var(--text-muted); }
+
+  #how-it-works,
+  #we-do-it-all { background: var(--navy); }
+  #how-it-works .section-title,
+  #we-do-it-all .section-title { color: var(--white); }
+  #how-it-works .intro-text,
+  #we-do-it-all .intro-text { color: rgba(255, 255, 255, 0.66); }
+  .steps-list { display: grid; }
+  .step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(212, 180, 131, 0.12);
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num,
+  .service-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.4rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .step-num { color: rgba(212, 180, 131, 0.25); }
+  .service-num {
+    color: rgba(212, 180, 131, 0.32);
+    margin-bottom: 1rem;
+  }
+  .step-title {
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .step-desc { color: rgba(255, 255, 255, 0.6); }
+  .service-title {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+
+  .do-it-all-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+    gap: 5rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+  .do-it-all-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.66);
+    margin-bottom: 1.2rem;
+  }
+  .checklist {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .check-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .check-mark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+    font-size: 0.7rem;
+  }
+  .check-text { color: rgba(255, 255, 255, 0.72); }
+  .do-it-all-highlight {
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .do-it-all-highlight + .do-it-all-highlight { margin-top: 1.5rem; }
+  .highlight-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .highlight-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .highlight-sub { color: rgba(255, 255, 255, 0.55); }
+
+  #cta {
+    background: var(--cream);
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  #cta .section-eyebrow { justify-content: center; }
+  .cta-sub {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--text-muted);
+    max-width: 560px;
+    margin: 0 auto 2.5rem;
+  }
+  .cta-actions {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-gold,
+  .btn-outline-dark {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    transition: opacity 0.3s, background 0.3s, color 0.3s;
+  }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+    border: 1px solid var(--gold);
+  }
+  .btn-gold:hover { opacity: 0.9; }
+  .btn-outline-dark {
+    border: 1px solid var(--navy);
+    color: var(--navy);
+  }
+  .btn-outline-dark:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  footer {
+    background: #080f1d;
+    border-top: 1px solid rgba(212, 180, 131, 0.1);
+    padding: 2.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-copy {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.36);
+    letter-spacing: 0.05em;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1180px) {
+    .site-nav { flex-wrap: wrap; }
+    .nav-links {
+      order: 3;
+      width: 100%;
+      justify-content: flex-start;
+      overflow: visible;
+      padding: 0.3rem 0 0.2rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    section { padding: 5rem 5%; }
+    .do-it-all-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .page-hero { min-height: 620px; }
+    .step { grid-template-columns: 60px 1fr; }
+  }
+
+  @media (max-width: 680px) {
+    .site-nav {
+      height: 70px;
+      min-height: 70px;
+      flex-wrap: nowrap;
+    }
+    .brand-name { font-size: 1.1rem; }
+    .brand-mark { width: 32px; height: 27px; }
+    .nav-links {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      display: none;
+      width: 100%;
+      padding: 1rem 5%;
+      background: rgba(11, 28, 54, 0.98);
+      border-bottom: 1px solid var(--border);
+      overflow: visible;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .nav-links.is-open { display: flex; }
+    .nav-dropdown { width: 100%; }
+    .nav-dropdown-toggle::after { display: none; }
+    .nav-dropdown-menu {
+      position: static;
+      min-width: 0;
+      width: 100%;
+      margin-top: 0.4rem;
+      padding-left: 1rem;
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      background: transparent;
+      border: none;
+      backdrop-filter: none;
+    }
+    .nav-dropdown-menu a {
+      padding: 0.45rem 0;
+      border-bottom: none;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .nav-cta { display: none; }
+    .nav-toggle {
+      display: inline-flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--gold);
+      cursor: pointer;
+    }
+    .nav-toggle span,
+    .nav-toggle::before,
+    .nav-toggle::after {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: currentColor;
+      display: block;
+      position: absolute;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .nav-toggle::before { transform: translateY(-6px); }
+    .nav-toggle::after { transform: translateY(6px); }
+    .nav-toggle[aria-expanded="true"] span { opacity: 0; }
+    .nav-toggle[aria-expanded="true"]::before { transform: rotate(45deg); }
+    .nav-toggle[aria-expanded="true"]::after { transform: rotate(-45deg); }
+    .page-hero {
+      min-height: auto;
+      padding: 8.5rem 5% 5rem;
+    }
+    .page-hero-title { font-size: clamp(2.6rem, 15vw, 3.8rem); }
+    .page-hero-eyebrow,
+    .section-eyebrow { letter-spacing: 0.18em; }
+    .step { grid-template-columns: 1fr; gap: 0.8rem; }
+    .cta-actions,
+    .btn-gold,
+    .btn-outline-dark { width: 100%; }
+    .footer-copy { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="index.html" class="brand" aria-label="Rahim International home">
+    <svg class="brand-mark" viewBox="100 80 480 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="60" y="10" width="560" height="540" rx="16" class="brand-mark-bg"/>
+      <rect x="168" y="318" width="344" height="9" rx="1" class="brand-mark-gold"/>
+      <rect x="168" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <rect x="468" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <path d="M340,88 C310,160 274,240 295,318 L315,318 C298,240 328,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C370,160 406,240 385,318 L365,318 C382,240 352,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C322,155 308,240 310,318 L318,318 C316,240 330,158 340,100 Z" class="brand-mark-navy"/>
+      <path d="M340,88 C358,155 372,240 370,318 L362,318 C370,240 350,158 340,100 Z" class="brand-mark-navy"/>
+      <line x1="340" y1="88" x2="185" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="210" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="128" x2="236" y2="318" class="brand-mark-line" stroke-width="1.1" opacity="0.82"/>
+      <line x1="340" y1="153" x2="262" y2="318" class="brand-mark-line" stroke-width="1.0" opacity="0.75"/>
+      <line x1="340" y1="88" x2="495" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="470" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="128" x2="444" y2="318" class="brand-mark-line" stroke-width="1.1" opacity="0.82"/>
+      <line x1="340" y1="153" x2="418" y2="318" class="brand-mark-line" stroke-width="1.0" opacity="0.75"/>
+    </svg>
+    <span class="brand-name">Rahim <span>International</span></span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+    <span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="nav-dropdown">
+      <button class="nav-dropdown-toggle active" type="button" aria-haspopup="true">Buyers</button>
+      <div class="nav-dropdown-menu" aria-label="Buyer categories">
+        <a href="investors-international.html" class="active" aria-current="page">International Investors</a>
+        <a href="investors-mre.html">Moroccan Diaspora / MRE</a>
+        <a href="investors-local.html">Local Investors</a>
+      </div>
+    </li>
+    <li><a href="services-developers.html">Developers</a></li>
+    <li><a href="why-morocco.html">Why Kénitra</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Enquire</a>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="page-hero-fade" aria-hidden="true"></div>
+    <div class="page-hero-pattern" aria-hidden="true"></div>
+    <div class="page-hero-content">
+      <p class="page-hero-eyebrow">International Investors</p>
+      <h1 class="page-hero-title">Invest in Morocco.<br><em>We Handle Everything.</em></h1>
+      <p class="page-hero-sub">From first enquiry to first rental income, complete guidance for international buyers navigating Morocco's property market.</p>
+    </div>
+  </section>
+
+  <section id="legal">
+    <p class="section-eyebrow">Legal Framework</p>
+    <h2 class="section-title">How It Works for<br>Foreign Buyers</h2>
+    <p class="intro-text">Morocco's property laws are clear, transparent, and foreigner-friendly. Foreign nationals can purchase property with freehold ownership rights, no residency requirement, and a transaction handled through a licensed Moroccan notaire and registered with the Land Registry.</p>
+    <div class="legal-grid">
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">✓</div>
+        <h3 class="legal-card-title">Full Ownership Rights</h3>
+        <p class="legal-card-text">Foreigners can own residential property outright, under their own name, in Morocco's urban areas. Full freehold, notarised, Land Registry-registered title.</p>
+      </article>
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">✓</div>
+        <h3 class="legal-card-title">No Residency Required</h3>
+        <p class="legal-card-text">You do not need to live in Morocco to purchase. The process can be completed remotely through properly prepared power of attorney documents.</p>
+      </article>
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">✓</div>
+        <h3 class="legal-card-title">Income Repatriation</h3>
+        <p class="legal-card-text">When structured correctly through a convertible dirham account, rental income and sale proceeds can be transferred abroad through the formal exchange framework.</p>
+      </article>
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">✓</div>
+        <h3 class="legal-card-title">Legal Right to Rent</h3>
+        <p class="legal-card-text">Foreign property owners can rent their units on a short-term or long-term basis. Income must be declared to Moroccan tax authorities under standard rules.</p>
+      </article>
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">€</div>
+        <h3 class="legal-card-title">Transaction Costs</h3>
+        <p class="legal-card-text">Total purchase transaction costs typically cover notaire fees, registration, and taxes. We help you understand every cost before you commit.</p>
+      </article>
+      <article class="legal-card reveal">
+        <div class="legal-card-icon">%</div>
+        <h3 class="legal-card-title">Mortgage Guidance</h3>
+        <p class="legal-card-text">Moroccan banks may finance non-resident buyers. We help you prepare the right dossier and compare available options.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <p class="section-eyebrow">Step by Step</p>
+    <h2 class="section-title">The Purchase Process</h2>
+    <p class="intro-text">A clear, guided journey from first interest to confirmed ownership. We walk with you through every stage.</p>
+    <div class="steps-list">
+      <article class="step reveal">
+        <div class="step-num">01</div>
+        <div>
+          <h3 class="step-title">Choose Your Unit</h3>
+          <p class="step-desc">Select unit type and size with our guidance. We advise on location, yield potential, and resale value.</p>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-num">02</div>
+        <div>
+          <h3 class="step-title">Open a Convertible Dirham Account</h3>
+          <p class="step-desc">This account helps protect your ability to transfer qualifying rental income and sale proceeds abroad.</p>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-num">03</div>
+        <div>
+          <h3 class="step-title">Notarial Process</h3>
+          <p class="step-desc">The notaire verifies title, performs legal due diligence, and manages the formal transaction process.</p>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-num">04</div>
+        <div>
+          <h3 class="step-title">Land Registry Registration</h3>
+          <p class="step-desc">Title is registered in your name. You receive the definitive proof of legal ownership.</p>
+        </div>
+      </article>
+      <article class="step reveal">
+        <div class="step-num">05</div>
+        <div>
+          <h3 class="step-title">Management Begins</h3>
+          <p class="step-desc">We can help furnish, photograph, list, and manage your property so the asset starts working for you.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="services-list">
+    <p class="section-eyebrow">What We Offer</p>
+    <h2 class="section-title">Our Services<br>for Buyers</h2>
+    <p class="intro-text">For international investors, we are a trusted guide from first contact through to key handover and beyond. One point of contact. Complete accountability.</p>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Unit Selection &amp; Advisory</h3>
+        <p class="service-desc">We advise on the right unit, location, and price point for your investment goals.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Direct Developer Brokerage</h3>
+        <p class="service-desc">We broker directly with developers on your behalf, negotiating price, terms, and contract conditions.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Bank Financing Assistance</h3>
+        <p class="service-desc">We guide you through the Moroccan mortgage process, from bank selection to dossier preparation.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Notary Referral &amp; Coordination</h3>
+        <p class="service-desc">We connect you with trusted notaires and coordinate the legal process.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Power of Attorney Representation</h3>
+        <p class="service-desc">If you cannot travel to Morocco, we help coordinate remote representation securely.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">06</div>
+        <h3 class="service-title">Furnishing, Listing &amp; Management</h3>
+        <p class="service-desc">Once you own, we can help prepare your property for rental and ongoing management.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="we-do-it-all">
+    <p class="section-eyebrow">Complete Service</p>
+    <h2 class="section-title">We Do Everything.<br>You Just Say Yes.</h2>
+    <div class="do-it-all-grid">
+      <div>
+        <p class="do-it-all-text">From first enquiry to first rental income, Rahim International handles every step. We find the unit, broker the deal directly with the developer, assist with bank financing, refer notary services, represent you when you cannot be here, furnish and style your apartment, and manage it day-to-day.</p>
+        <p class="do-it-all-text">One decision. We handle everything else.</p>
+        <div class="checklist">
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Unit selection and advisory</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Direct developer brokerage</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Bank financing assistance</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Notary referral and coordination</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Power of attorney support</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Regulatory and legal guidance</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Furnishing and decoration</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Rental listing and photography</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Day-to-day property management</div></div>
+          <div class="check-item reveal"><div class="check-mark">✓</div><div class="check-text">Monthly income reporting</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="do-it-all-highlight">
+          <div class="highlight-label">Why Rahim International</div>
+          <div class="highlight-text">"Our understanding of the international buyer is earned, not theoretical, built on years of hosting guests from Europe, North America, and the Gulf."</div>
+          <p class="highlight-sub">We know what works, what to avoid, and how to make your Moroccan investment perform from day one.</p>
+        </div>
+        <div class="do-it-all-highlight">
+          <div class="highlight-label">Our Commitment</div>
+          <div class="highlight-text">We do not take listings. We take mandates.</div>
+          <p class="highlight-sub">Based in Kénitra, Morocco. Serving buyers across Europe, North America, and the Gulf.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <p class="section-eyebrow">Start Your Journey</p>
+    <h2 class="section-title">Ready to Invest<br>in Morocco?</h2>
+    <p class="cta-sub">Speak with our team. We will guide you through every step, from choosing the right property to receiving your first rental income.</p>
+    <div class="cta-actions">
+      <a href="index.html#contact" class="btn-gold">Begin a Conversation</a>
+      <a href="index.html#portfolio" class="btn-outline-dark">View Portfolio</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="index.html" class="brand" aria-label="Rahim International home">
+    <svg class="brand-mark" viewBox="100 80 480 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="60" y="10" width="560" height="540" rx="16" class="brand-mark-bg"/>
+      <rect x="168" y="318" width="344" height="9" rx="1" class="brand-mark-gold"/>
+      <rect x="168" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <rect x="468" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <path d="M340,88 C310,160 274,240 295,318 L315,318 C298,240 328,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C370,160 406,240 385,318 L365,318 C382,240 352,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C322,155 308,240 310,318 L318,318 C316,240 330,158 340,100 Z" class="brand-mark-navy"/>
+      <path d="M340,88 C358,155 372,240 370,318 L362,318 C370,240 350,158 340,100 Z" class="brand-mark-navy"/>
+      <line x1="340" y1="88" x2="185" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="210" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="88" x2="495" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="470" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+    </svg>
+    <span class="brand-name">Rahim <span>International</span></span>
+  </a>
+  <div class="footer-copy">© 2026 Rahim International. All rights reserved.</div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('#nav-links');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+    navLinks.classList.toggle('is-open', !isOpen);
+  });
+
+  navLinks.addEventListener('click', (event) => {
+    if (event.target.matches('a')) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+      navLinks.classList.remove('is-open');
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>

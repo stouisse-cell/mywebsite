@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahim International | Kénitra Property Investment</title>
+<meta name="description" content="Rahim International connects international buyers and developers with premium property opportunities in Kénitra, Morocco. Full-service advisory, marketing, and acquisition support across Europe, North America, and the Gulf.">
+<meta name="keywords" content="Morocco real estate investment, Kenitra property, international buyers Morocco, Morocco property advisory, Moroccan diaspora property, buy apartment Morocco, Kenitra developer sales">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1e3a;
+    --navy-mid: #162d52;
+    --gold: #d4b483;
+    --gold-deep: #a8844a;
+    --cream: #faf7f1;
+    --white: #ffffff;
+    --text-dark: #0d1e3a;
+    --text-muted: #5a6a7e;
+    --border: rgba(212, 180, 131, 0.25);
+    --shadow: 0 20px 50px rgba(11, 28, 54, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  img, video, svg { display: block; max-width: 100%; }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    padding: 0 5%;
+    background: rgba(11, 28, 54, 0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+    min-width: max-content;
+  }
+  .brand-mark { width: 38px; height: 32px; flex: 0 0 auto; }
+  .brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+  .brand-name span { color: var(--white); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.8rem, 1.8vw, 2rem);
+    list-style: none;
+  }
+  .nav-links a,
+  .nav-dropdown-toggle,
+  .nav-cta {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: inherit;
+    transition: color 0.3s, background 0.3s, border-color 0.3s;
+  }
+  .nav-dropdown-toggle {
+    border: 0;
+    background: transparent;
+    cursor: default;
+  }
+  .nav-links a,
+  .nav-dropdown-toggle { color: rgba(255, 255, 255, 0.7); }
+  .nav-links a:hover,
+  .nav-links a:focus-visible,
+  .nav-dropdown-toggle:hover,
+  .nav-dropdown-toggle:focus-visible,
+  .nav-links a.active { color: var(--gold); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .nav-dropdown-toggle::after {
+    content: '▾';
+    font-size: 0.6rem;
+    opacity: 0.75;
+  }
+  .nav-dropdown::after {
+    content: '';
+    position: absolute;
+    left: -0.75rem;
+    right: -0.75rem;
+    top: 100%;
+    height: 0;
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    min-width: 230px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: rgba(11, 28, 54, 0.98);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    z-index: 300;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid rgba(212, 180, 131, 0.12);
+  }
+  .nav-dropdown-menu a:last-child { border-bottom: none; }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%);
+  }
+  .nav-cta {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 0.55rem 1.2rem;
+  }
+  .nav-cta:hover,
+  .nav-cta:focus-visible {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .nav-toggle { display: none; }
+
+  .brand-mark-bg { fill: var(--navy); }
+  .brand-mark-gold { fill: var(--gold); }
+  .brand-mark-deep { fill: var(--gold-deep); }
+  .brand-mark-navy { fill: var(--navy); }
+  .brand-mark-line { stroke: var(--gold); }
+
+  #home {
+    min-height: 100vh;
+    background: var(--navy);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.62;
+    z-index: 1;
+  }
+  .hero-fallback {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to right, #0b1c36 0%, rgba(11, 28, 54, 0.88) 36%, rgba(11, 28, 54, 0.24) 100%),
+      url("kenitra1.png") center / cover;
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(to right, rgba(11, 28, 54, 0.94) 0%, rgba(11, 28, 54, 0.66) 50%, rgba(11, 28, 54, 0.25) 100%),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.62) 100%);
+  }
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(212, 180, 131, 0.04) 80px),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(212, 180, 131, 0.04) 80px);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 4;
+    width: min(900px, 90%);
+    margin-top: 70px;
+    padding: 5rem 0 6rem;
+    margin-left: 5%;
+  }
+  .hero-eyebrow,
+  .section-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .hero-eyebrow { margin-bottom: 1.8rem; }
+  .hero-eyebrow::before,
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 1px;
+    background: var(--gold);
+    flex: 0 0 auto;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 650px;
+    margin-bottom: 3rem;
+  }
+  .hero-actions,
+  .button-row {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .services-actions { margin-top: 3rem; }
+  .btn-primary,
+  .btn-outline,
+  .btn-light {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    transition: opacity 0.3s, color 0.3s, border-color 0.3s, background 0.3s;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    border: 1px solid var(--gold);
+  }
+  .btn-primary:hover,
+  .btn-primary:focus-visible { opacity: 0.9; }
+  .btn-outline,
+  .btn-light {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.84);
+    background: transparent;
+  }
+  .btn-outline:hover,
+  .btn-outline:focus-visible,
+  .btn-light:hover,
+  .btn-light:focus-visible {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 5%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .hero-scroll::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+  }
+
+  section { padding: 7rem 5%; }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+
+  #about {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-text,
+  .portfolio-intro,
+  .contact-text,
+  .services-intro {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.9;
+  }
+  .about-text,
+  .portfolio-intro { color: var(--text-muted); }
+  .about-text { margin-bottom: 1.2rem; }
+  .about-quote {
+    margin: 2.5rem 0 0;
+    border-left: 2px solid var(--gold);
+    padding-left: 1.8rem;
+  }
+  .about-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--navy);
+  }
+  .about-quote cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.68rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .about-right { display: grid; gap: 1.2rem; }
+  .about-stat {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 1.8rem 2rem;
+    position: relative;
+  }
+  .about-stat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gold);
+  }
+  .about-stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .about-stat-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  #services { background: var(--navy); }
+  #services .section-title { color: var(--white); }
+  .services-intro {
+    color: rgba(255, 255, 255, 0.66);
+    max-width: 690px;
+    margin-bottom: 4rem;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    background: rgba(212, 180, 131, 0.16);
+  }
+  .service-card {
+    background: var(--navy);
+    padding: 2.5rem 2rem;
+    transition: background 0.3s;
+  }
+  .service-card:hover { background: var(--navy-mid); }
+  .service-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgba(212, 180, 131, 0.22);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .service-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .service-desc {
+    font-size: 0.82rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .img-banner {
+    min-height: 360px;
+    position: relative;
+    overflow: hidden;
+  }
+  .img-banner-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1920&fit=max');
+    background-size: cover;
+    background-position: center 60%;
+  }
+  .img-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 30, 58, 0.82) 0%, rgba(13, 30, 58, 0.35) 50%, rgba(13, 30, 58, 0.72) 100%);
+  }
+  .img-banner-content {
+    position: relative;
+    z-index: 2;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .img-banner-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.2;
+    max-width: 500px;
+  }
+  .img-banner-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  #portfolio { background: var(--cream); }
+  .portfolio-intro {
+    max-width: 620px;
+    margin-bottom: 3.5rem;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 780px);
+  }
+  .portfolio-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+  }
+  .portfolio-img {
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+  .portfolio-img-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('elaf.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+  }
+  .portfolio-card:hover .portfolio-img-bg { transform: scale(1.04); }
+  .portfolio-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 28, 54, 0.85) 0%, transparent 60%);
+  }
+  .portfolio-img-label {
+    position: relative;
+    z-index: 2;
+    padding: 1.2rem 1.5rem;
+    width: 100%;
+  }
+  .portfolio-location,
+  .portfolio-kpi-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .portfolio-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--white);
+  }
+  .portfolio-body { padding: 1.5rem; }
+  .portfolio-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .tag {
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    padding: 0.3rem 0.8rem;
+    color: var(--text-muted);
+  }
+  .portfolio-desc {
+    font-size: 0.82rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--text-muted);
+  }
+  .portfolio-kpis {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .portfolio-kpi-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--navy);
+  }
+  .portfolio-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  .portfolio-cta:hover,
+  .portfolio-cta:focus-visible { border-color: var(--gold-deep); }
+  .portfolio-cta::after { content: '>'; }
+
+  #contact {
+    background: var(--navy);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+    gap: 5rem;
+    align-items: start;
+  }
+  #contact .section-title { color: var(--white); }
+  .contact-text {
+    color: rgba(255, 255, 255, 0.66);
+    margin-bottom: 2.5rem;
+  }
+  .contact-info { display: grid; gap: 1.5rem; }
+  .contact-item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    color: var(--gold);
+  }
+  .contact-item-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.2rem;
+  }
+  .contact-item-value,
+  .contact-item-value a {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+  }
+  .contact-form { display: grid; gap: 1.2rem; }
+  .form-group { display: grid; gap: 0.5rem; }
+  .form-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.58);
+  }
+  .form-input,
+  .form-select,
+  .form-textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 180, 131, 0.22);
+    color: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0.85rem 1rem;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s, background 0.3s;
+    border-radius: 0;
+  }
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .form-input::placeholder,
+  .form-textarea::placeholder { color: rgba(255, 255, 255, 0.32); }
+  .form-select option {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .form-textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .form-submit {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 1rem 2.4rem;
+    cursor: pointer;
+    transition: opacity 0.3s, background 0.3s;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .form-submit:hover,
+  .form-submit:focus-visible { opacity: 0.9; }
+
+  footer {
+    background: #080f1d;
+    border-top: 1px solid rgba(212, 180, 131, 0.1);
+    padding: 2.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-copy {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.36);
+    letter-spacing: 0.05em;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1180px) {
+    .site-nav { height: auto; min-height: 70px; flex-wrap: wrap; padding-top: 0.8rem; padding-bottom: 0.8rem; }
+    .nav-links { order: 3; width: 100%; justify-content: flex-start; overflow: visible; padding: 0.3rem 0 0.2rem; }
+    .hero-content { margin-top: 96px; }
+  }
+
+  @media (max-width: 900px) {
+    section { padding: 5rem 5%; }
+    #about,
+    #contact { grid-template-columns: 1fr; gap: 3rem; }
+    .form-grid { grid-template-columns: 1fr; }
+    .img-banner-content { justify-content: center; text-align: center; }
+    .img-banner-content .button-row { justify-content: center; }
+  }
+
+  @media (max-width: 680px) {
+    .site-nav {
+      height: 70px;
+      min-height: 70px;
+      flex-wrap: nowrap;
+    }
+    .brand-name { font-size: 1.1rem; }
+    .brand-mark { width: 32px; height: 27px; }
+    .nav-links {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      display: none;
+      width: 100%;
+      padding: 1rem 5%;
+      background: rgba(11, 28, 54, 0.98);
+      border-bottom: 1px solid var(--border);
+      overflow: visible;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .nav-links.is-open { display: flex; }
+    .nav-dropdown { width: 100%; }
+    .nav-dropdown-toggle::after { display: none; }
+    .nav-dropdown::after { display: none; }
+    .nav-dropdown-menu {
+      position: static;
+      min-width: 0;
+      width: 100%;
+      margin-top: 0.4rem;
+      padding-left: 1rem;
+      transform: none;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      background: transparent;
+      border: none;
+      backdrop-filter: none;
+    }
+    .nav-dropdown-menu a {
+      padding: 0.45rem 0;
+      border-bottom: none;
+      color: rgba(255, 255, 255, 0.56);
+    }
+    .nav-cta { display: none; }
+    .nav-toggle {
+      display: inline-flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--gold);
+      cursor: pointer;
+    }
+    .nav-toggle span,
+    .nav-toggle::before,
+    .nav-toggle::after {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: currentColor;
+      display: block;
+      position: absolute;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .nav-toggle::before { transform: translateY(-6px); }
+    .nav-toggle::after { transform: translateY(6px); }
+    .nav-toggle[aria-expanded="true"] span { opacity: 0; }
+    .nav-toggle[aria-expanded="true"]::before { transform: rotate(45deg); }
+    .nav-toggle[aria-expanded="true"]::after { transform: rotate(-45deg); }
+    #home { min-height: auto; }
+    .hero-content {
+      width: 90%;
+      margin: 70px auto 0;
+      padding: 6rem 0 7rem;
+    }
+    .hero-title { font-size: clamp(2.35rem, 15vw, 3.4rem); }
+    .hero-eyebrow,
+    .section-eyebrow { letter-spacing: 0.18em; }
+    .hero-actions,
+    .button-row { width: 100%; }
+    .btn-primary,
+    .btn-outline,
+    .btn-light { width: 100%; padding-left: 1rem; padding-right: 1rem; }
+    .portfolio-img { min-height: 250px; }
+    .portfolio-kpis { gap: 1.2rem; }
+    .portfolio-kpis > div { width: calc(50% - 0.6rem); }
+    .footer-copy { width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="#home" class="brand" aria-label="Rahim International home">
+    <svg class="brand-mark" viewBox="100 80 480 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="60" y="10" width="560" height="540" rx="16" class="brand-mark-bg"/>
+      <rect x="168" y="318" width="344" height="9" rx="1" class="brand-mark-gold"/>
+      <rect x="168" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <rect x="468" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <path d="M340,88 C310,160 274,240 295,318 L315,318 C298,240 328,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C370,160 406,240 385,318 L365,318 C382,240 352,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C322,155 308,240 310,318 L318,318 C316,240 330,158 340,100 Z" class="brand-mark-navy"/>
+      <path d="M340,88 C358,155 372,240 370,318 L362,318 C370,240 350,158 340,100 Z" class="brand-mark-navy"/>
+      <line x1="340" y1="88" x2="185" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="210" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="128" x2="236" y2="318" class="brand-mark-line" stroke-width="1.1" opacity="0.82"/>
+      <line x1="340" y1="153" x2="262" y2="318" class="brand-mark-line" stroke-width="1.0" opacity="0.75"/>
+      <line x1="340" y1="88" x2="495" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="470" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="128" x2="444" y2="318" class="brand-mark-line" stroke-width="1.1" opacity="0.82"/>
+      <line x1="340" y1="153" x2="418" y2="318" class="brand-mark-line" stroke-width="1.0" opacity="0.75"/>
+    </svg>
+    <span class="brand-name">Rahim <span>International</span></span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+    <span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="nav-dropdown">
+      <button class="nav-dropdown-toggle" type="button" aria-haspopup="true">Buyers</button>
+      <div class="nav-dropdown-menu" aria-label="Buyer categories">
+        <a href="investors-international.html">International Investors</a>
+        <a href="investors-mre.html">Moroccan Diaspora / MRE</a>
+        <a href="investors-local.html">Local Investors</a>
+      </div>
+    </li>
+    <li><a href="services-developers.html">Developers</a></li>
+    <li><a href="why-morocco.html">Why Kénitra</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Enquire</a>
+</nav>
+
+<main>
+  <section id="home">
+    <video class="hero-video" autoplay muted loop playsinline poster="hero-poster.jpg">
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Morocco · Europe · North America · Gulf</p>
+      <h1 class="hero-title">
+        Exceptional Properties.<br>
+        <em>International Buyers.</em><br>
+        One Trusted Bridge.
+      </h1>
+      <p class="hero-sub">
+        Rahim International connects serious investors across Europe, North America, and the Gulf with premium Moroccan property, combining the strategic depth of a management consultancy, the precision of a luxury marketing agency, and a proven international distribution network.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">View Portfolio</a>
+        <a href="why-morocco.html" class="btn-outline">Why Kénitra</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <section id="about">
+    <div class="about-left">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">A Different<br>Kind of Firm</h2>
+      <p class="about-text">
+        Rahim International is a cross-border real estate advisory firm headquartered in Kénitra, Morocco. We serve two audiences with equal depth: developers who need credible international reach, and buyers, whether Moroccan diaspora or foreign nationals, who need a trusted, end-to-end guide through the Moroccan acquisition process.
+      </p>
+      <p class="about-text">
+        We are not a listing platform. We take mandates, deploy a complete capability set, and deliver results. For buyers, we manage every step from property selection through to key handover, in the language and timezone that suits you.
+      </p>
+      <div class="about-quote">
+        <p>"Kénitra is one of the most compelling emerging property markets in Morocco, and Morocco is one of the most compelling markets in the world. The problem has never been the product. It has been the bridge to the right buyers. That is what we are."</p>
+        <cite>Ali Rahim · Founder &amp; CEO</cite>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-stat reveal">
+        <div class="about-stat-num">3</div>
+        <div class="about-stat-label">Continents of active buyer distribution</div>
+      </div>
+      <div class="about-stat reveal">
+        <div class="about-stat-num">2+</div>
+        <div class="about-stat-label">Years of cross-border real estate expertise</div>
+      </div>
+      <div class="about-stat reveal">
+        <div class="about-stat-num">360°</div>
+        <div class="about-stat-label">Full-service from mandate to key handover</div>
+      </div>
+      <div class="about-stat reveal">
+        <div class="about-stat-num">IBA</div>
+        <div class="about-stat-label">International business and marketing foundation</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <p class="section-eyebrow">What We Do</p>
+    <h2 class="section-title">Our Approach</h2>
+    <p class="services-intro">
+      For developers with projects in Kénitra, we are a fully integrated international sales and marketing partner, not a broker collecting listings. For buyers exploring Moroccan property investment for the first time or the tenth, we are a trusted guide from first contact through to the moment you hold the keys.
+    </p>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3 class="service-title">International Sales &amp; Distribution</h3>
+        <p class="service-desc">Direct access to pre-qualified investors across Europe, North America, and the Gulf, buyers who are positioned to act, not merely browse.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Investment Case Architecture</h3>
+        <p class="service-desc">We build compelling, data-backed investment narratives around your development, calibrated to the expectations of international capital.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Premium Marketing &amp; Creative</h3>
+        <p class="service-desc">Visual identity, bilingual digital campaigns, and content precision that matches the calibre of your development.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Buyer Advisory &amp; Guided Acquisition</h3>
+        <p class="service-desc">End-to-end support for international buyers: legal navigation, market intelligence, site visits, ownership guidance, and transaction management.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Developer Partnership Mandates</h3>
+        <p class="service-desc">We take mandates, not listings. A full commercial commitment to your project, with our complete capability set deployed to fulfil it.</p>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">06</div>
+        <h3 class="service-title">Market Intelligence &amp; Strategy</h3>
+        <p class="service-desc">IBA-trained, internationally experienced, and on the ground in Kénitra. We provide analytical clarity and market perspective.</p>
+      </article>
+    </div>
+    <div class="button-row services-actions">
+      <a href="investors-international.html" class="btn-primary">International Investors</a>
+      <a href="investors-mre.html" class="btn-primary">For MRE</a>
+      <a href="investors-local.html" class="btn-primary">Local Investors</a>
+      <a href="services-developers.html" class="btn-outline">Services for Developers</a>
+    </div>
+  </section>
+
+  <div class="img-banner">
+    <div class="img-banner-bg" aria-hidden="true"></div>
+    <div class="img-banner-overlay" aria-hidden="true"></div>
+    <div class="img-banner-content">
+      <p class="img-banner-title">Exceptional developments.<br><em>International buyers.</em></p>
+      <div class="button-row">
+        <a href="investors-international.html" class="btn-primary">International Investors</a>
+        <a href="investors-mre.html" class="btn-light">For MRE</a>
+        <a href="investors-local.html" class="btn-light">Local Investors</a>
+        <a href="services-developers.html" class="btn-light">For Developers</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="portfolio">
+    <p class="section-eyebrow">Portfolio</p>
+    <h2 class="section-title">Active Mandate</h2>
+    <p class="portfolio-intro">
+      We partner exclusively with developments we believe in, and we bring our full capability to each one. Our current active mandate in Kénitra sets the standard for what premium residential investment looks like in this market.
+    </p>
+    <div class="portfolio-grid">
+      <article class="portfolio-card reveal">
+        <div class="portfolio-img">
+          <div class="portfolio-img-bg" aria-hidden="true"></div>
+          <div class="portfolio-img-overlay" aria-hidden="true"></div>
+          <div class="portfolio-img-label">
+            <div class="portfolio-location">Kénitra · City Centre</div>
+            <h3 class="portfolio-name">Elaf Sky View</h3>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags">
+            <span class="tag">Apartments</span>
+            <span class="tag">Moroccan Diaspora</span>
+            <span class="tag">Foreign Investors</span>
+            <span class="tag">Daam Sakani Eligible</span>
+            <span class="tag">Active Mandate</span>
+          </div>
+          <p class="portfolio-desc">Rising above Kénitra's skyline, Elaf Sky View redefines residential standards in the city. 35 premium apartments, meticulously finished, in a building designed to command attention.</p>
+          <div class="portfolio-kpis">
+            <div>
+              <div class="portfolio-kpi-label">Total Units</div>
+              <div class="portfolio-kpi-value">35</div>
+            </div>
+            <div>
+              <div class="portfolio-kpi-label">Size Range</div>
+              <div class="portfolio-kpi-value">61-108 m²</div>
+            </div>
+            <div>
+              <div class="portfolio-kpi-label">Price</div>
+              <div class="portfolio-kpi-value">11,500 MAD/m²</div>
+            </div>
+            <div>
+              <div class="portfolio-kpi-label">Floors</div>
+              <div class="portfolio-kpi-value">6</div>
+            </div>
+          </div>
+          <a href="#contact" class="portfolio-cta">Request Full Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Begin a<br>Conversation</h2>
+      <p class="contact-text">
+        Whether you are a developer seeking a credible international sales partner, or an investor exploring Moroccan property for the first time, we welcome the conversation. We are based in Kénitra and serve clients globally.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">✉</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:contact@RahimInternational.com">contact@RahimInternational.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">☎</div>
+          <div>
+            <div class="contact-item-label">Phone &amp; WhatsApp</div>
+            <div class="contact-item-value"><a href="tel:+212642773249">+212 642 77 32 49</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">◎</div>
+          <div>
+            <div class="contact-item-label">Headquarters</div>
+            <div class="contact-item-value">70 Av. Youssef Ben Tachfine, Kénitra 14000, Morocco</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="first-name">First Name</label>
+            <input id="first-name" name="first-name" type="text" class="form-input" placeholder="Your first name" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last-name">Last Name</label>
+            <input id="last-name" name="last-name" type="text" class="form-input" placeholder="Your last name" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-input" placeholder="your@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="profile">I am a</label>
+          <select id="profile" name="profile" class="form-select" required>
+            <option value="">Select your profile</option>
+            <option>Developer seeking a sales partner</option>
+            <option>International investor</option>
+            <option>Diaspora buyer</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project or interest..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="#home" class="brand" aria-label="Rahim International home">
+    <svg class="brand-mark" viewBox="100 80 480 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="60" y="10" width="560" height="540" rx="16" class="brand-mark-bg"/>
+      <rect x="168" y="318" width="344" height="9" rx="1" class="brand-mark-gold"/>
+      <rect x="168" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <rect x="468" y="310" width="44" height="22" rx="2" class="brand-mark-deep"/>
+      <path d="M340,88 C310,160 274,240 295,318 L315,318 C298,240 328,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C370,160 406,240 385,318 L365,318 C382,240 352,162 340,100 Z" class="brand-mark-gold"/>
+      <path d="M340,88 C322,155 308,240 310,318 L318,318 C316,240 330,158 340,100 Z" class="brand-mark-navy"/>
+      <path d="M340,88 C358,155 372,240 370,318 L362,318 C370,240 350,158 340,100 Z" class="brand-mark-navy"/>
+      <line x1="340" y1="88" x2="185" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="210" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+      <line x1="340" y1="88" x2="495" y2="318" class="brand-mark-line" stroke-width="1.4" opacity="0.95"/>
+      <line x1="340" y1="106" x2="470" y2="318" class="brand-mark-line" stroke-width="1.25" opacity="0.88"/>
+    </svg>
+    <span class="brand-name">Rahim <span>International</span></span>
+  </a>
+  <div class="footer-copy">© 2026 Rahim International. All rights reserved.</div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('#nav-links');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+    navLinks.classList.toggle('is-open', !isOpen);
+  });
+
+  navLinks.addEventListener('click', (event) => {
+    if (event.target.matches('a')) {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+      navLinks.classList.remove('is-open');
+    }
+  });
+
+  document.querySelector('#contact-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const btn = form.querySelector('.form-submit');
+    btn.textContent = 'Message Sent · Thank You';
+    btn.style.background = '#2d6a4f';
+    btn.style.color = '#fff';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.textContent = 'Send Enquiry';
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+      form.reset();
+    }, 4000);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>
