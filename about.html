@@ -72,6 +72,19 @@
     letter-spacing: 0.08em;
   }
   .brand-name span { color: var(--white); }
+  .brand-text {
+    display: grid;
+    gap: 0.1rem;
+    line-height: 1;
+  }
+  .brand-subtitle {
+    font-size: 0.54rem;
+    font-weight: 500;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.58);
+    white-space: nowrap;
+  }
   .brand-mark-bg { fill: var(--navy); }
   .brand-mark-gold { fill: var(--gold); }
   .brand-mark-deep { fill: var(--gold-deep); }
@@ -721,6 +734,7 @@
       flex-wrap: nowrap;
     }
     .brand-name { font-size: 1.1rem; }
+    .brand-subtitle { font-size: 0.45rem; letter-spacing: 0.12em; }
     .brand-mark { width: 32px; height: 27px; }
     .nav-links {
       position: fixed;
@@ -837,7 +851,10 @@
       <line x1="340" y1="128" x2="444" y2="318" class="brand-mark-line" stroke-width="1.1" opacity="0.82"/>
       <line x1="340" y1="153" x2="418" y2="318" class="brand-mark-line" stroke-width="1.0" opacity="0.75"/>
     </svg>
-    <span class="brand-name">Rahim <span>International</span></span>
+    <span class="brand-text">
+      <span class="brand-name">Rahim <span>International</span></span>
+      <span class="brand-subtitle">Real Estate Advisory &amp; Consulting</span>
+    </span>
   </a>
   <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
     <span></span>
